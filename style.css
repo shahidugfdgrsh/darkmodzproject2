@@ -1,48 +1,143 @@
+/* Hacker style background */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #fff;
-    margin: 0;
-    padding: 0;
+  background: radial-gradient(circle, #0f0f0f, #000000);
+  font-family: 'Courier New', Courier, monospace;
+  color: #00ff00;
+  margin: 0;
+  padding: 0;
 }
 
+/* Header styling */
 header {
-    background-color: #222;
-    padding: 20px;
-    text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #000a00;
+  box-shadow: 0 0 15px #00ff00;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+.header-left h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  user-select: none;
 }
 
-nav ul li {
-    display: inline-block;
-    margin: 0 15px;
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-nav ul li a {
-    color: #1db954;
-    text-decoration: none;
-    font-weight: bold;
+/* Buttons style */
+button {
+  width: 90vw;
+  max-width: 150px;
+  padding: 12px 0;
+  border-radius: 20px;
+  border: none;
+  background: #007f00;
+  color: #fff;
+  box-shadow: 0 0 10px #00ff00;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  font-size: 1rem;
+  user-select: none;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+@media(min-width: 600px) {
+  button {
+    width: auto;
+    max-width: 150px;
+  }
 }
 
+button:hover,
+button:focus {
+  box-shadow: 0 0 25px #00ff00, 0 0 40px #00ff00 inset;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+/* User name display */
+#userName {
+  font-weight: bold;
+  min-width: 100px;
+  text-align: right;
+  user-select: text;
+}
+
+/* Dropdown menu styles */
+.dropdown {
+  position: absolute;
+  background-color: #001000;
+  border: 1px solid #00ff00;
+  box-shadow: 0 0 15px #00ff00;
+  border-radius: 10px;
+  padding: 10px;
+  right: 15px;
+  top: 50px;
+  z-index: 100;
+}
+
+.dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown ul li {
+  margin: 5px 0;
+}
+
+.dropdown ul li a {
+  color: #00ff00;
+  text-decoration: none;
+  font-weight: 600;
+  user-select: none;
+}
+
+.dropdown ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Close button for three-dot menu */
+#closeThreeDot {
+  background: transparent;
+  border: none;
+  color: #00ff00;
+  font-size: 1.5rem;
+  cursor: pointer;
+  float: right;
+  user-select: none;
+}
+
+/* Main sections */
 main {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
+  padding: 20px 15px;
 }
 
-footer {
-    background-color: #222;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+section {
+  max-width: 500px;
+  margin: 20px auto;
 }
+
+section h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+section ul li {
+  margin: 10px 0;
+  text-align: center;
+}
+
+section ul li a {
+  color: #00ff00;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+section ul li a:hover {
+  text-decoration: underline;
+      }
+    
