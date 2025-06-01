@@ -1,38 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Free Fire Private Server 2025</title>
-    <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>DarkModz - Downloads</title>
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Welcome to Free Fire Private Server 2025</h1>
-        <nav>
-            <ul>
-                <li><a href="https://alexyr.cosuk.online/servidor-privado-de-free-fire-2025-que-es-como-funciona-y-como-acceder/" target="_blank" rel="noopener noreferrer">Download</a></li>
-                <li><a href="https://youtu.be/YlhCfQGcd2E?si=PvaWMv9ZdJc-Aw9q" target="_blank" rel="noopener noreferrer">Tutorial</a></li>
-                <li><a href="https://discord.gg/invite/kibomodz" target="_blank" rel="noopener noreferrer">Discord</a></li>
-                <li><a href="https://freefirekeym.com" target="_blank" rel="noopener noreferrer">Register ID</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section>
-            <h2>About This Server</h2>
-            <p>This private server allows you to experience Free Fire with exclusive features for 2025.</p>
-        </section>
+<header>
+  <div class="header-left">
+    <h1>DarkModz</h1>
+  </div>
 
-        <section>
-            <h2>How To Access</h2>
-            <p>Follow the tutorial above and download the files to get started.</p>
-        </section>
-    </main>
+  <div class="header-right">
+    <span id="userName"></span>
+    <button id="profileBtn" style="display:none;">Profile ▼</button>
+    <div id="profileMenu" class="dropdown" style="display:none;">
+      <button id="logoutBtn">Logout</button>
+    </div>
 
-    <footer>
-        <p>© 2025 Free Fire Private Server Community</p>
-    </footer>
+    <button id="threeDotBtn">⋮</button>
+    <div id="threeDotMenu" class="dropdown" style="display:none;">
+      <button id="closeThreeDot">✕</button>
+      <ul>
+        <li><a href="#downloadsSection" id="downloadsLink">Downloads</a></li>
+        <li><a href="#aboutSection" id="aboutLink">About</a></li>
+      </ul>
+    </div>
+
+    <button id="loginGoogle">Login with Google</button>
+  </div>
+</header>
+
+<main>
+  <section id="downloadsSection" style="display:none;">
+    <h2>Downloads</h2>
+    <ul>
+      <li><a href="https://alexyr.cosuk.online/servidor-privado-de-free-fire-2025-que-es-como-funciona-y-como-acceder/" target="_blank" rel="noopener noreferrer">Free Fire Private Server Download</a></li>
+      <!-- Add more download links here -->
+    </ul>
+  </section>
+
+  <section id="aboutSection" style="display:none;">
+    <h2>About</h2>
+    <p>Website made by Shahid.</p>
+  </section>
+</main>
+
+<script type="module" src="auth.js"></script>
+<script src="dropdown.js"></script>
+
 </body>
 </html>
